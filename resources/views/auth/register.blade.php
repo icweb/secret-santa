@@ -22,7 +22,7 @@
                             <label for="code" class="col-md-4 col-form-label text-md-right">Invitation Code</label>
 
                             <div class="col-md-6">
-                                <input id="code" type="text" class="form-control @error('code') is-invalid @enderror" name="code" value="{{ old('code') }}" required autofocus>
+                                <input id="code" type="text" class="form-control @error('code') is-invalid @enderror" name="code" value="{{ old('code', $_GET['code'] ?? '') }}" required autofocus>
 
                                 @error('code')
                                 <span class="invalid-feedback" role="alert">
