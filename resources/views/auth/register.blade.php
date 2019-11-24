@@ -11,6 +11,9 @@
                     <div class="alert alert-danger">
                         Deadline to register is <b>{{ config('santa.dates.deadline')->format('M d, Y h:i a') }}</b>
                     </div>
+                    <div>
+                        Already registered? <a href="/login">Click here to login</a>.
+                    </div>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
