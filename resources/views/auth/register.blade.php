@@ -18,7 +18,7 @@
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
-                        <div class="form-group row" {{ isset($_GET['code']) ? 'style="display:none"' : '' }}>
+                        <div class="form-group row" {{ isset($_GET['code']) ? 'style=display:none' : '' }}>
                             <label for="code" class="col-md-4 col-form-label text-md-right">Invitation Code</label>
 
                             <div class="col-md-6">
