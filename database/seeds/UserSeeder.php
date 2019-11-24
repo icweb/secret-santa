@@ -17,29 +17,5 @@ class UserSeeder extends Seeder
             'password' => bcrypt('password'),
             'admin' => true
         ]);
-
-        $users = [
-            'Rob',
-            'Ryan',
-            'Ian',
-            'Arthur',
-            'Larry C',
-            'Larry D',
-            'Nick',
-            'Brian',
-            'Jonas',
-            'Cody',
-        ];
-
-        foreach($users as $user)
-        {
-            $fake = factory(App\User::class)->make();
-
-            \App\User::create([
-                'name' => $user,
-                'email' => $fake->email,
-                'password' => bcrypt('password'),
-            ]);
-        }
     }
 }
