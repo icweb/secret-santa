@@ -13,6 +13,7 @@
                     </div>
                     <div>
                         Already registered? <a href="/login">Click here to login</a>.
+                        <br><br>
                     </div>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
